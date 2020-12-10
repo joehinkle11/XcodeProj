@@ -1,9 +1,10 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.3
 
 import PackageDescription
 
 let package = Package(
     name: "XcodeProj",
+    platforms: [.macOS(.v10_14),.iOS(.v14)],
     products: [
         .library(name: "XcodeProj", targets: ["XcodeProj"]),
     ],

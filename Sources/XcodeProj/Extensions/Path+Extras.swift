@@ -7,7 +7,8 @@ import PathKit
 #if os(macOS)
 let systemGlob = Darwin.glob
 #else
-let systemGlob = Glibc.glob
+let systemGlob = Darwin.glob
+//let systemGlob = Glibc.glob
 #endif
 
 extension Path {
